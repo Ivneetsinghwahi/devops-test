@@ -4,7 +4,11 @@ files:
   - source: /
     destination: /home/ec2-user/devops-test
 hooks:
-  ApplicationStop:
+  ApplicationStart:
     - location: application_start.sh
+      timeout: 300
+      runas: ec2-user
+  BeforeInstall:
+    - location: before_install.sh
       timeout: 300
       runas: ec2-user
