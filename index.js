@@ -2,7 +2,7 @@ var os = require('os')
 var http = require('http')
 
 function handleRequest(req, res) {
-  res.write('Hello hi  there! I\'m being served via ' + os.hostname());
+  res.write('Hello hi  there! I\'m being served via round robin method ' + os.hostname());
   res.end();
 }
 
