@@ -2,7 +2,7 @@ var os = require('os')
 var http = require('http')
 
 function handleRequest(req, res) {
-  res.write('Hello there! I\'m being served again and again and again from ' + os.hostname());
+  res.write('Hello hi  there! I\'m being served again and again and again from ' + os.hostname());
   res.end();
 }
 
